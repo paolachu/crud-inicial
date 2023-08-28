@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  
+  <div class="content">
+    <p class="text-content"><strong>REVERSA</strong></p>
+    <p class="brand">CADASTROS</p>    
+    </div>
+    
+<!--Fazendo o topo do nosso cadastro, e botão de incluir-->
+    <div class="container">
+<!--Inserindo imagem de fundo-->
+        <div class="background-img">
+        <img class="img" src="images/fundo.jpg" alt="fundo">
+        </div>
+
+        <div class="header">
+            <span>Registro de usuários</span>
+            <button class="incluir" onclick="openModal()" id="new">INCLUIR</i></button>
+        </div>
+
+<!--Tabela para as funções de editar e excluir-->
+    <div class="divTable">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Sobrenome</th>
+                    <th>Usuário</th>
+                    <th>Email</th>
+                    <th class="acao">Editar</th>
+                    <th class="acao">Excluir</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>    
+
+<!--Janela para incluir os dados-->
+    <div class="modal-container">
+        <div class="modal">
+            <form>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" required/>
+
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" id="sobrenome" required/>
+
+                <label for="usuario">Usuário</label>
+                <input type="text" id="usuario" required/>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" required/>
+
+                <button class="botao" id="salvar">Salvar</button>
+            </form>
+        </div>
+    </div>
+<!-- Janela de confirmação de exclusão -->
+    <div class="confirmation-modal" id="confirmationModal">
+        <div class="modal-content">
+        <p>Tem certeza que deseja excluir?</p>
+        <button id="confirmDelete">Confirmar</button>
+        <button id="cancelDelete">Cancelar</button>
+        </div>
+    </div>
+
+<!--Rodapé-->
+<footer>
+    <div class="main">
+      <div class="content footer-links">
+        <div class="footer-hour">
+          <h5>REVERSA - Atendimento de segunda a sexta das 9h às 17h</h5>&nbsp;
+          <h5>contato@reversa.com.br</h5>
+        </div>
+        <div class="footer-company">
+          <h4>INSTITUCIONAL</h4>
+          <h6>Sobre a Reversa</h6>
+          <h6>Entre em Contato</h6>
+        </div>
+        <div class="footer-ajuda">
+          <h4>DÚVIDAS</h4>
+          <h6>Como comprar</h6>
+          <h6>Pagamentos e Envios</h6>
+          <h6>Trocas e Devoluções</h6>
+        </div>
+        <div class="footer-social">
+          <h4>Siga-nos</h4>
+          <div class="social-images">
+            <img src="images/instagram.png" alt="insta"/>
+            <img src="images/facebook.png" alt="face"/>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="last">
+        2023 REVERSA VELAS - Política de Privacidade
+      </div>
+  </footer>
+    </div>
+  <!--Adicionando o script-->
+  <script src="script.js"></script>
+</body>
+</html>

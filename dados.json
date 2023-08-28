@@ -1,0 +1,15 @@
+[
+    {
+      "nome": "João",
+      "sobrenome": "Silva",
+      "usuario": "joao123",
+      "email": "joao@example.com"
+    },
+    {
+      "nome": "Maria",
+      "sobrenome": "Santos",
+      "usuario": "maria456",
+      "email": "maria@example.com"
+    }
+  ]
+  
